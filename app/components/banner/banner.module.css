@@ -1,8 +1,8 @@
 
-
+i
 
 .banner{
-  background: url('@/public/mainBG.png');
+  background: url('./../../../public/mainBG.png');
   width: 100%;
   min-height: 100vh;
   background-position: center;
