@@ -77,7 +77,7 @@ function SearchField() {
         />
         <button
           type="submit"
-          className="search-decor px-5 py-2 text-[#747474] text-[18px]"
+          className="search-decor font-roboto px-5 py-2 text-[#747474] text-[18px]"
         >
           Search
         </button>
@@ -97,7 +97,6 @@ function SearchField() {
             <div>
               {data.slice(0, 5).map((recipeItem, index) => (
                 <MealCard src={recipeItem.strMealThumb} name={recipeItem.strMeal} text={recipeItem.strInstructions} reverse={index % 2 !== 0} key={recipeItem.strMeal} />
-                // <p key={index}>{recipeItem?.strMeal}</p>
               ))}
             </div>
           ) : null

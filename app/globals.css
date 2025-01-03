@@ -2,13 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer utilities {
+  .header-logo{
+    position: relative;
+  }
+  .header-logo::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    background-color: #fcac45;
+    width: 110%;
+    height: 1px;
+    left: -5%;
+  }
   .aboutUs {
     max-width: 1120px;
     margin: 0 auto;
-    padding: 150px 10px;
+    /* padding: 150px 10px; */
   }
-
+  .aboutUs-header{
+    position: relative;
+  }
+  .aboutUs-header::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    background-color: #fcac45;
+    width: 103px;
+    height: 1px;
+    left: 0;
+  }
   /* .searchShadow{
     box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1)
     inset -10px 0 8px rgba(0, 0, 0, 0.1),
@@ -26,6 +50,20 @@
     width: 1px;
     height: 26px;
     background-color: #fcac45;
+  }
+  .recipe-item{
+    position: relative;
+  }
+  .recipe-item::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fcac45;
+    bottom: calc(-70px/2)
+  }
+  .recipe-item:last-child::after{
+    display: none;
   }
   .recipe-text {
     display: -webkit-box; /* Створення багаторядкового контейнера */
@@ -46,6 +84,18 @@
   .footer-info-item-wrapper {
     margin: 15px;
   }
+  .foter-item-decor{
+    position: relative;
+  }
+  .foter-item-decor::after{
+    position: absolute;
+    content: '';
+    width: 29px;
+    height: 1px;
+    background-color: #fcac45;
+    bottom: -11px;
+    left: 50%;
+  }
   .footer-info-location,
   .footer-info-openingHours {
     position: relative;
@@ -61,7 +111,6 @@
     background-color: #fcac45;
   }
   .footer-info-item-header {
-    font-size: 27px;
     margin-bottom: 21px;
   }
   .footer-info-item {
@@ -70,4 +119,6 @@
   .footer-copyright {
     font-size: 11px;
   }
+
+  
 }

@@ -12,6 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+       fontFamily: {
+        italianno: ["var(--font-italianno-sans)", "cursive"],
+        manrope: ["var(--font-manrope-sans)", "sans-serif"],
+        roboto: ["var(--font-roboto-sans)", "sans-serif"],
+      }
     },
   },
   plugins: [],
