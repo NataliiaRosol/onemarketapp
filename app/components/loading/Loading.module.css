@@ -1,0 +1,31 @@
+.loading{
+  position: relative;
+  /* border-bottom: 1px solid #FCAC45; */
+  
+}
+.loading::after{
+  content: '';
+  position: absolute;
+  bottom: 0; 
+  left: 0; 
+  width: 0; 
+  height: 2px;
+  background-color: #FCAC45; 
+  animation: loadingAnimation 0.5s ease ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    width: 0%; 
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%; 
+  }
+}
