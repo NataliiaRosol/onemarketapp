@@ -2,7 +2,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Loading from "../loading/Loading";
-import { error, log } from "console";
 import Error from "../error/Error";
 import SearchInfoMessage from "./SearchInfoMessage";
 import MealCard from "../MealCard";
@@ -56,8 +55,10 @@ function SearchField() {
   }
 
   useEffect(() => {
-    isFirstSearch &&
+    if(isFirstSearch){
       setInfoMessage("Please, for searching recipies enter some value");
+    }
+      
   }, []);
 
   return (
