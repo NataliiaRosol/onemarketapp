@@ -6,6 +6,7 @@ import Header from "./components/Header";
 
 const geistItalianno = Italianno({
   variable: "--font-italianno-sans",
+  subsets: ["latin"],
   weight: ["400"]
 });
 
