@@ -2,20 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .aboutUs{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 150px 10px;
   }
-}
+  
+  /* .searchShadow{
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1)
+    inset -10px 0 8px rgba(0, 0, 0, 0.1),
+    inset 1px 0 8px rgba(0, 0, 0, 0.1),
+    inset 2px 0 8px rgba(0, 0, 0, 0.1);
+    
+  } */
+  .search-decor{
+    position: relative;
+  }
+  .search-decor:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 1px;
+    height: 26px;
+    background-color: #FCAC45;
+  }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+  .footer{
+    border-top: 1px;
+    border-top-style: solid;
+    border-top-color: #FCAC45;
+  }
+  .footer-inner{
+    padding-top: 26px;
+    padding-bottom: 11px;
+  }
+  .footer-info-item-wrapper{
+    margin: 15px;
+  }
+  .footer-info-location,
+  .footer-info-openingHours{
+    position: relative;
+  }
+  .footer-info-location::after,
+  .footer-info-openingHours::after{
+    position: absolute;
+    content: '';
+    right: -117px;
+    top: -6px;
+    height: 163px;
+    width: 1px;
+    background-color: #FCAC45;
+  }
+  .footer-info-item-header{
+    font-size: 27px;
+    margin-bottom: 21px;
+  }
+  .footer-info-item{
+    font-size: 12px;
+  }
+  .footer-copyright{
+    font-size: 11px;
+  }
 }
