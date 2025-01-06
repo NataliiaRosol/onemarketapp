@@ -65,10 +65,10 @@ function SearchField() {
     <>
       <form
         onSubmit={(event) => handleSubmit(event)}
-        className="searchShadow w-[500px] h-10 mx-auto flex mb-[65px] border-solid border-[1px]"
+        className="searchShadow w-[360px] md:w-[500px] h-10 mx-auto flex justify-between items-center mb-[30px]  md:mb-[65px] border-solid border-[1px]"
       >
         <input
-          className="w-[390px] h-full px-3 rounded-[3px] text-[18px] outline-none"
+          className="md:w-[390px] h-full px-3 rounded-[3px] text-[18px] outline-none"
           type="text"
           name="search"
           id="search"
@@ -77,7 +77,7 @@ function SearchField() {
         />
         <button
           type="submit"
-          className="search-decor font-roboto px-5 py-2 text-[#747474] text-[18px]"
+          className="search-decor font-roboto px-2 py-4 md:px-5 md:py-2 text-[#747474] text-[18px]"
         >
           Search
         </button>
@@ -86,10 +86,10 @@ function SearchField() {
       
 
       <div>
-        <div className="text-center text-xl mb-20">
-        {loading && <Loading />}
-        {error && !loading && <Error errorMessage={errorMessage} />}
-        </div>
+        
+          {loading && <Loading />}
+          {error && !loading && <Error errorMessage={errorMessage} />}
+        
       
         {infoMessage && !loading && !error && <SearchInfoMessage message={infoMessage} />}
         {

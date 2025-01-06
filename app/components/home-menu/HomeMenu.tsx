@@ -7,7 +7,7 @@ import { MenuData } from '@/app/utils/constants'
 function HomeMenu() {
   return (
     <div>
-      <h3 className="font-italianno text-[35px] homeMenu-header text-center mb-10">Menu</h3>
+      <h3 className="font-italianno text-[35px] homeMenu-header text-center mb-2 lg:mb-10">Menu</h3>
       <div className="mx-auto my-0 max-w-[1120px] px-3">
         {
           MenuData.map((menuItem, index)=> (

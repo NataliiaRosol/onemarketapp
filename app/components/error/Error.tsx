@@ -6,7 +6,7 @@ interface errorMessageProps{
 
 function Error({errorMessage}:errorMessageProps) {
   return (
-    <div>
+    <div className='text-xl mb-20'>
       <p className='text-center'>Sorry, an error occured: {errorMessage}</p>
       </div>
   )
