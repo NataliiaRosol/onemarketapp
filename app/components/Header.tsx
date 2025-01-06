@@ -94,13 +94,13 @@ function Header() {
         <div className="flex flex-col h-full">
           {/* Верхній блок меню */}
           <div className="flex flex-col items-end gap-5 text-lg">
-            <Link href="/">Home</Link>
-            <Link href="/menu">Menu</Link>
+            <Link href="/" onClick={() => setIsMenuIsToggled(false)}>Home</Link>
+            <Link href="/menu" onClick={() => setIsMenuIsToggled(false)}>Menu</Link>
           </div>
       
           {/* Contacts */}
-          <div className="mt-auto mb-20 text-center"> {/* Додаємо нижній відступ */}
-            <p className="relative mb-5 after:absolute after:bottom-[-10px] after:bg-[#fcac45] after:h-[1px] after:w-[163px] after:left-12">Contacts</p>
+          <div className="mt-auto mb-20 text-center"> 
+            <Link href="/contacts" className="block relative mb-5 after:absolute after:bottom-[-10px] after:bg-[#fcac45] after:h-[1px] after:w-[163px] after:left-12" onClick={() => setIsMenuIsToggled(false)}>Contacts</Link>
             <a href="tel:+380777777777" className="">+380 (77) 77 77 777</a>
             <div className="flex items-center justify-center gap-[39px] mt-5 mb-[21px]">
               <Link href=''>

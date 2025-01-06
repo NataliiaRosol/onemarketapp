@@ -22,7 +22,7 @@
   }
   .aboutUs-header {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
   }
   .aboutUs-header::after {
     position: absolute;
@@ -162,7 +162,7 @@
     bottom: -35px;
   }
   .aboutUs-header::after{
-    left: 0;
+    left: 50px;
   }
   .homeMenu-header::after{
     display: none;
